@@ -54,8 +54,15 @@ header {
 .row{
     margin: 0;
 }
+img{
+    transition: all 1s;
 
-#row-frace{  /* agregar nueva foto con texto de nueva foto */
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+#row-frace{  
     background-image: url('../assets/buhoojos.png');
     background-size: cover;
     background-position: center;
@@ -88,8 +95,36 @@ footer{
 
 footer a{
     text-decoration: none;
-    color: white;
+    color: rgb(37, 241, 58);
 }
+/*navstroke*/
+nav.navbar ul li a{
+    position: relative;
+  }
+  nav.navbar ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgb(140, 219, 13);
+    height: 1px;
+  }
+  nav.navbar ul li a:hover {
+    color: rgb(17, 141, 28);
+  }
+  nav.navbar ul li a:hover:after {
+    width: 90%;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  
 
 @media(max-width:992px){
     .navbar-nav{
