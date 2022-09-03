@@ -1,0 +1,223 @@
+
+/* cuerpo */
+
+*{
+  margin:0;
+  padding: 0;
+  border: border-box;
+
+
+}
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows:auto 1fr auto ;
+    
+  }
+  
+/* Pagina de inicio*/
+  section.Ipage{
+    background-image: url(./);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  img.newsi{
+    display:block;
+    width: 30%;
+    margin: auto ;
+    text-align: center;
+    padding-top: 1.25em;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Portada de paginas*/
+  section.gpage{
+    background-image: url(../assets/panoramica.jpg); 
+    height: 25em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+  }
+
+ 
+  form.formulario{
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    font-size: 100%;
+    padding:0.625rem;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  footer {
+    background-color: rgb(191, 222, 235);
+    padding: 1em 0;
+    text-align: center;
+    position:static;
+    
+    
+  }
+  
+  /* Atributos*/
+  div.cnfotos{
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+    
+  }
+  
+  
+  h1{
+    text-align: center;
+    font-weight: 2.667vw;
+    padding-top: 50px;
+    font-size: 6.667vw;
+    letter-spacing: 10px;
+    color: white;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 4vw;
+    margin: 0;
+    font-weight: 300;
+    color: inherit;
+    padding: 50px;
+    position:sticky;
+  }
+
+  
+  
+  
+  section {
+    height: 100vh;
+  
+  }
+  
+  h2.title{
+    font-family:sans-serif;
+    text-align:center;
+    font-size: 9.333vw;
+    border:transparent;
+    background-color: rgb(1, 49, 1);
+    text-transform: uppercase;
+    color:whitesmoke ;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  /*sobre mi*/
+  h2.nombre{
+    background-color: rgb(55, 79, 36);
+    color: white;
+    padding: 25px;
+  }
+  div.infyo{
+    padding: 2px 10px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+  
+  /*GALERIA*/
+  div.galeria{
+    margin: 10px 20px ;
+    box-shadow: 0 4px 8px 0 rgb(187, 222, 243), 0 6px 20px 0 rgba(0, 0, 0, 19);
+    float:left ;
+    width: 350px;
+  }
+  div.galeria img{
+    width: 100%;
+    height: auto;
+  }
+  div.galeria:hover{
+    border: 1px solid lightcoral;
+    transform: scale(1.2,1.2)
+  }
+  div.pie{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(133, 127, 133);
+    padding: 9px;
+    background-color: rgb(255, 253, 253);
+  }
+  
+  
+  /* NAVIGATION */
+  nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255,255,255,);
+    padding: 50px 0;
+    box-shadow: 0px 0px 0px #dedede;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(8, 0, 0);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: rgb(255, 253, 253);
+  }
+  
+  /* stroke */
+  nav.stroke ul li a{
+    position: relative;
+  }
+  nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #333;
+    height: 1px;
+  }
+  nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
+  
+  
+  
+ 
+  
+  
+   
+
+  
+  
