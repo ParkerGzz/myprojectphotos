@@ -58,6 +58,12 @@ img{
     transition: all 1s;
 
 }
+img.img{
+    transition: none;
+}
+img.img:hover{
+    transform: none;
+}
 img:hover{
     transform: scale(1.1);
 }
@@ -72,6 +78,24 @@ img:hover{
 }
 #row-frace:hover{
     transform:  scale(1.1);
+}
+#row-nosotros{
+    background-image: url('../assets/imgfondo.jpg');
+    background-size: cover;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+#row-nosotros{
+    background-image: url('../assets/imgfondo.jpg');
+    background-size: cover;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+#row-nosotros img{
+    border-radius: 10%;
+    width: 300px;
+    height: auto;
 }
 #row-contacto{
     background-image: url('../assets/buhonieve.jpg');
